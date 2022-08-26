@@ -10,6 +10,10 @@ html.dark {
   background: #121212;
 }
 
+body {
+  font-family: Inter, sans-serif;
+}
+
 #nprogress {
   pointer-events: none;
 }

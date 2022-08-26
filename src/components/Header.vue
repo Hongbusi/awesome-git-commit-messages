@@ -3,7 +3,7 @@ import { toggleDark } from '~/composables'
 </script>
 
 <template>
-  <header class="border-b border-gray-200 dark:border-gray-800">
+  <header class="sticky top-0 z-50 border-b border-gray-200 dark:border-gray-800 bg-white dark:bg-[#121212]">
     <nav class="flex justify-between items-center container px-4 mx-auto h-12">
       <h2 class="text-xl font-600">
         Commit Example
