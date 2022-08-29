@@ -8,7 +8,7 @@ defineProps<{
 
 <template>
   <div v-for="(item, index) in list" :key="index">
-    <div class="sticky top-12 my-8 text-center text-gray bg-white dark:bg-[#121212] title">
+    <div class="sticky top-12 my-8 text-center text-gray bg-white z-30 dark:bg-[#121212] title">
       <h3 class="text-3xl font-600 title">
         {{ item.title }}
       </h3>
