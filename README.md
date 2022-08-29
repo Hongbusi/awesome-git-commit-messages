@@ -1,6 +1,6 @@
 # git commit message example
 
-[Online Preview](https://git.hongbusi.com/)
+[Online Preview](https://git.hongbusi.com)
 
 <!-- example-start -->
 
