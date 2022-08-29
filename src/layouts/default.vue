@@ -4,5 +4,6 @@
     <div class="container px-4 mx-auto">
       <router-view />
     </div>
+    <Footer />
   </main>
 </template>

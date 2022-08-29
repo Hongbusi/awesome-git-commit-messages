@@ -8,7 +8,8 @@ interface CommitMessage {
 }
 
 export interface CommitType {
-  type: string
+  title: string
+  description: string
   list: CommitMessage[]
 }
 
