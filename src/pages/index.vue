@@ -1,9 +1,13 @@
+<script setup lang="ts">
+import config from '~/config'
+</script>
+
 <template>
-  <div class="mt-10">
-    <h1 class="text-5xl text-center text-green-400">
-      在纠结如何写出优雅 Commit Message ？
+  <div class="my-10 text-center">
+    <h1 class="text-4xl">
+      {{ config.title }}
     </h1>
   </div>
 
-  <List />
+  <List :list="config.commitList" />
 </template>

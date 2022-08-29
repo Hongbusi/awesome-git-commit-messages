@@ -1,11 +1,26 @@
-<template>
-  <div class="sticky top-12 my-8 text-center text-gray bg-white dark:bg-[#121212] title">
-    <h3 class="text-3xl font-600 title">
-      Chore
-    </h3>
-  </div>
+<script setup lang="ts">
+import type { CommitType } from '~/types'
 
-  <ListItem content="docs: fix typo" description="错字修改" />
+defineProps<{
+  list: CommitType[]
+}>()
+</script>
+
+<template>
+  <div v-for="(item, index) in list" :key="index">
+    <div class="sticky top-12 my-8 text-center text-gray bg-white dark:bg-[#121212] title">
+      <h3 class="text-3xl font-600 title">
+        {{ item.type }}
+      </h3>
+    </div>
+
+    <ListItem
+      v-for="commit in item.list"
+      :key="commit.message"
+      :content="commit.message"
+      :description="commit.description"
+    />
+  </div>
 </template>
 
 <style scoped>
