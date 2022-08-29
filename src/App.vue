@@ -1,6 +1,6 @@
 <script setup lang="ts">
 useHead({
-  title: 'Commit Example',
+  title: 'Git commit message example',
   meta: [
     { name: 'description', content: 'Git commit message example.' }
   ]
