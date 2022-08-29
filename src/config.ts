@@ -4,6 +4,19 @@ const config: Config = {
   title: 'Git commit message example.',
   commitList: [
     {
+      title: 'chore',
+      description: '变更构建流程或辅助工具',
+      list: [
+        { message: 'chore: add/remove xxx dep', description: '添加/删除 xxx 依赖' },
+        { message: 'chore: update deps', description: '更新依赖' },
+        { message: 'chore: update example', description: '更新示例' },
+        { message: 'chore: update readme', description: '更新 README' },
+        { message: 'chore: update lockfile', description: '更新 lock 文件' },
+        { message: 'chore: fix eslint error', description: '修复 eslint error' },
+        { message: 'chore: remove debugger', description: '移除 debugger' }
+      ]
+    },
+    {
       title: 'feat',
       description: '新增特性',
       list: [
@@ -22,7 +35,9 @@ const config: Config = {
       description: '修改文档',
       list: [
         { message: 'docs: improve example', description: 'docs: 改进示例' },
-        { message: 'docs: fix typo', description: '错字修改' }
+        { message: 'docs: fix typo', description: '错字修改' },
+        { message: 'docs: update', description: '更新文档' },
+        { message: 'docs: rename example', description: '重命名示例' }
       ]
     },
     {
@@ -36,7 +51,9 @@ const config: Config = {
       title: 'refactor',
       description: '代码重构',
       list: [
-        { message: 'refactor: improve code readability', description: '改进代码可读性' }
+        { message: 'refactor: improve code readability', description: '改进代码可读性' },
+        { message: 'refactor: rename directory', description: '重命名目录' },
+        { message: 'refactor: simplify logic', description: '简化逻辑' }
       ]
     },
     {
@@ -64,16 +81,7 @@ const config: Config = {
       title: 'ci',
       description: '更改持续集成软件的配置文件和 package 中的 scripts 命令',
       list: [
-        { message: '暂无', description: '暂无' }
-      ]
-    },
-    {
-      title: 'chore',
-      description: '变更构建流程或辅助工具',
-      list: [
-        { message: 'chore: add/remove xxx dep', description: '添加/删除 xxx 依赖' },
-        { message: 'chore: update deps', description: '更新依赖' },
-        { message: 'chore: update readme', description: '更新 README' }
+        { message: 'ci: remove verify script', description: '删除验证脚本' }
       ]
     },
     {
