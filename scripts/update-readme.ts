@@ -26,7 +26,6 @@ function generatorExample(exampleContent: string) {
   fse.writeFileSync(readmePath, resultContent)
 }
 
-const exampleContent = getCommitExampleToMd(config.commitList)
-generatorExample(exampleContent)
+generatorExample(getCommitExampleToMd(config.commitList))
 
 console.log('\nThe example inserted successfully!!!\n\n\n')
