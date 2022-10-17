@@ -8,11 +8,9 @@ defineProps<{
 
 <template>
   <div v-for="(item, index) in list" :key="index">
-    <div class="my-8">
-      <h3 class="text-3xl font-600 title">
-        {{ item.title }}
-      </h3>
-    </div>
+    <h2 class="my-4 text-3xl">
+      {{ item.title }}
+    </h2>
 
     <ListItem
       v-for="commit in item.list"
