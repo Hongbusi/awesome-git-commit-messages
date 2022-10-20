@@ -1,18 +1,10 @@
 <script setup lang="ts">
-const props = defineProps<{ repo: string }>()
-
-const starCount = ref(0)
-
-fetch(`https://api.github.com/repos/Hongbusi/${props.repo}`)
-  .then(response => response.json())
-  .then((result) => {
-    starCount.value = result.stargazers_count
-  })
+defineProps<{ repo: string }>()
 </script>
 
 <template>
   <a class="hero-button" :href="`https://github.com/Hongbusi/${repo}`">
-    Star me on GitHub ● {{ starCount }} ★
+    Star me on GitHub ● 1 ★
   </a>
 </template>
 
