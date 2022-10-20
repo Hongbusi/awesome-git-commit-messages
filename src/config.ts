@@ -4,7 +4,7 @@ const config: Config = {
   title: 'Git commit message example.',
   commitList: [
     {
-      title: 'chore',
+      title: 'Chore',
       description: '变更构建流程或辅助工具',
       list: [
         { message: 'chore: add/remove xxx dep', description: '添加/删除 xxx 依赖' },
@@ -17,21 +17,21 @@ const config: Config = {
       ]
     },
     {
-      title: 'feat',
+      title: 'Feat',
       description: '新增特性',
       list: [
         { message: '暂无', description: '暂无' }
       ]
     },
     {
-      title: 'fix',
+      title: 'Fix',
       description: '修复 Bug',
       list: [
         { message: 'fix: style writing error', description: '风格书写错误' }
       ]
     },
     {
-      title: 'docs',
+      title: 'Docs',
       description: '修改文档',
       list: [
         { message: 'docs: improve example', description: 'docs: 改进示例' },
@@ -41,14 +41,14 @@ const config: Config = {
       ]
     },
     {
-      title: 'style',
+      title: 'Style',
       description: '代码格式修改',
       list: [
         { message: '暂无', description: '暂无' }
       ]
     },
     {
-      title: 'refactor',
+      title: 'Refactor',
       description: '代码重构',
       list: [
         { message: 'refactor: improve code readability', description: '改进代码可读性' },
@@ -57,35 +57,35 @@ const config: Config = {
       ]
     },
     {
-      title: 'perf',
+      title: 'Perf',
       description: '改善性能',
       list: [
         { message: '暂无', description: '暂无' }
       ]
     },
     {
-      title: 'test',
+      title: 'Test',
       description: '测试',
       list: [
         { message: '暂无', description: '暂无' }
       ]
     },
     {
-      title: 'build',
+      title: 'Build',
       description: '变更项目构建或外部依赖',
       list: [
         { message: '暂无', description: '暂无' }
       ]
     },
     {
-      title: 'ci',
+      title: 'Ci',
       description: '更改持续集成软件的配置文件和 package 中的 scripts 命令',
       list: [
         { message: 'ci: remove verify script', description: '删除验证脚本' }
       ]
     },
     {
-      title: 'revert',
+      title: 'Revert',
       description: '代码回退',
       list: [
         { message: '暂无', description: '暂无' }

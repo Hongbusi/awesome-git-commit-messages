@@ -8,7 +8,7 @@ defineProps<{
 
 <template>
   <div v-for="(item, index) in list" :key="index">
-    <h2 class="my-4 text-3xl">
+    <h2 class="my-6 text-3xl font-700">
       {{ item.title }}
     </h2>
 
