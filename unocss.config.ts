@@ -1,3 +1,5 @@
+import { resolve } from 'path'
+import { FileSystemIconLoader } from '@iconify/utils/lib/loader/node-loaders'
 import {
   defineConfig,
   presetAttributify,
@@ -12,7 +14,17 @@ export default defineConfig({
   presets: [
     presetUno(),
     presetAttributify(),
-    presetIcons(),
+    presetIcons({
+      extraProperties: {
+        'display': 'inline-block',
+        'height': '1.2em',
+        'width': '1.2em',
+        'vertical-align': 'text-bottom'
+      },
+      collections: {
+        hbs: FileSystemIconLoader(resolve(__dirname, './node_modules/@hongbusi/icons-svg'))
+      }
+    }),
     presetWebFonts({
       fonts: {
         sans: 'Inter:400,600,800'
