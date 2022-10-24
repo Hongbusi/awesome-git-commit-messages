@@ -10,7 +10,7 @@ const { copy } = useClipboard()
 
 const { start } = useTimeoutFn(() => {
   isCopy.value = false
-}, 3000, { immediate: false })
+}, 2000, { immediate: false })
 
 const restart = () => {
   isCopy.value = true
@@ -20,15 +20,18 @@ const restart = () => {
 </script>
 
 <template>
-  <div class="relative px-4 py-2 mb-4 bg-white rounded-2 shadow cursor-pointer" @click="restart">
+  <div class="item relative px-4 py-2 mb-4 bg-white rounded-2 shadow cursor-pointer" @click="restart">
     <div class="text-xl font-600 text-blue-500">
       {{ content }}
     </div>
     <div class="text-sm font-italic font-300">
       {{ description }}
     </div>
-    <div class="absolute top-1/2 right-2 -translate-y-1/2 flex justify-center items-center p-2 text-xl transition hover:bg-blue-100">
-      <div v-if="isCopy" class="i-hbs-copied" />
+    <div
+      class="item-copy absolute top-1/2 right-2 -translate-y-1/2 flex justify-center items-center p-1 text-base border rounded"
+      :class="{ 'border-green-700': isCopy }"
+    >
+      <div v-if="isCopy" class="i-hbs-check text-green-700" />
       <div v-else class="i-hbs-copy" />
     </div>
   </div>
