@@ -1,4 +1,4 @@
-# git commit message example
+# Awesome Git Commit Messages
 
 [Online Preview](https://git.hongbusi.com)
 

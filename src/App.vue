@@ -1,8 +1,8 @@
 <script setup lang="ts">
 useHead({
-  title: 'Git commit message example',
+  title: 'Awesome Git Commit Messages',
   meta: [
-    { name: 'description', content: 'Git commit message example.' }
+    { name: 'description', content: 'Awesome Git Commit Messages.' }
   ]
 })
 </script>

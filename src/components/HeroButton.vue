@@ -4,7 +4,7 @@ defineProps<{ repo: string }>()
 
 <template>
   <a class="hero-button" :href="`https://github.com/Hongbusi/${repo}`">
-    Star me on GitHub ● 1 ★
+    Star me on GitHub ● 2 ★
   </a>
 </template>
 

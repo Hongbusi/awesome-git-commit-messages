@@ -8,7 +8,7 @@ import config from '~/config'
       A collection of git commit message examples to make your project's commit history more readable.
     </h1>
 
-    <HeroButton repo="git-commit-message-example" />
+    <HeroButton repo="awesome-git-commit-messages" />
   </div>
 
   <List :list="config.commitList" />
