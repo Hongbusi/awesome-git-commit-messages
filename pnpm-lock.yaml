@@ -4,7 +4,7 @@ specifiers:
   '@commitlint/cli': ^17.0.3
   '@commitlint/config-conventional': ^17.0.3
   '@hongbusi/eslint-config': 0.3.4
-  '@hongbusi/icons-svg': ^0.0.7
+  '@hongbusi/icons-svg': ^0.0.8
   '@iconify/utils': ^2.0.1
   '@types/fs-extra': ^9.0.13
   '@types/node': ^18.7.9
@@ -34,7 +34,7 @@ specifiers:
   vue-tsc: 0.40.1
 
 dependencies:
-  '@hongbusi/icons-svg': 0.0.7
+  '@hongbusi/icons-svg': 0.0.8
   '@unocss/reset': 0.45.8
   '@vueuse/core': 9.1.0_vue@3.2.37
   '@vueuse/head': 0.7.9_vue@3.2.37
@@ -452,8 +452,8 @@ packages:
       - typescript
     dev: true
 
-  /@hongbusi/icons-svg/0.0.7:
-    resolution: {integrity: sha512-8Y71ye6Cays72GKqRVHDy+SINZ8qwR0vPUbX9xfB80ZL6QYUAoiTNsvLCYmzcycdHyDIN/VMKeLSMlw2VMTvtg==}
+  /@hongbusi/icons-svg/0.0.8:
+    resolution: {integrity: sha512-liefV4Qr4NZK0SgIQ8Zc9HoYVJAIg+N9mOU86oVbMJYx1+W588+p2Bu/AZbP7ZQrson3+iJXMYhppvJcqFHcXA==}
     dev: false
 
   /@humanwhocodes/config-array/0.10.4:
