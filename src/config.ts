@@ -7,7 +7,8 @@ const config: Config = {
       title: 'Chore',
       description: '变更构建流程或辅助工具',
       list: [
-        { message: 'chore: add/remove xxx dep', description: '添加/删除 xxx 依赖' },
+        { message: 'chore: add xxx dep', description: '添加 xxx 依赖' },
+        { message: 'chore: remove xxx dep', description: '删除 xxx 依赖' },
         { message: 'chore: update deps', description: '更新依赖' },
         { message: 'chore: update example', description: '更新示例' },
         { message: 'chore: update readme', description: '更新 README' },
