@@ -24,6 +24,7 @@ const restart = (index: number, value: string) => {
   <div v-for="item in list" :key="item.title">
     <h2 class="my-6 text-3xl font-700">
       {{ item.title }}
+      <span class="text-xl font-italic font-300">（{{ item.description }}）</span>
     </h2>
 
     <div
