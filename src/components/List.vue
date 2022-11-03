@@ -5,45 +5,45 @@ defineProps<{
   list: CommitType[]
 }>()
 
-const activeIndex = ref<number | null>(null)
+const active = ref<string>('')
 
 const { copy } = useClipboard()
 
 const { start } = useTimeoutFn(() => {
-  activeIndex.value = null
+  active.value = ''
 }, 2000, { immediate: false })
 
-const restart = (index: number, value: string) => {
-  activeIndex.value = index
+const restart = (index: string, value: string) => {
+  active.value = index
   copy(value)
   start()
 }
 </script>
 
 <template>
-  <div v-for="item in list" :key="item.title">
+  <div v-for="(firstItem, firstIndex) in list" :key="firstIndex">
     <h2 class="my-6 text-3xl font-700">
-      {{ item.title }}
-      <span class="text-xl font-italic font-300">（{{ item.description }}）</span>
+      {{ firstItem.title }}
+      <span class="text-xl font-italic font-300">（{{ firstItem.description }}）</span>
     </h2>
 
     <div
-      v-for="(commit, index) in item.list"
-      :key="commit.message"
+      v-for="(secondItem, secondIndex) in firstItem.list"
+      :key="secondItem.message"
       class="item relative px-4 py-2 mb-4 bg-white rounded-2 shadow cursor-pointer"
-      @click="restart(index, commit.message)"
+      @click="restart(`${firstIndex}-${secondIndex}`, secondItem.message)"
     >
       <div class="text-xl font-600 text-blue-500">
-        {{ commit.message }}
+        {{ secondItem.message }}
       </div>
       <div class="text-sm font-italic font-300">
-        {{ commit.description }}
+        {{ secondItem.description }}
       </div>
       <div
         class="item-copy absolute top-1/2 right-2 -translate-y-1/2 flex justify-center items-center p-1 text-base border rounded"
-        :class="{ 'border-green-700': activeIndex === index }"
+        :class="{ 'border-green-700': active === `${firstIndex}-${secondIndex}` }"
       >
-        <div v-if="activeIndex === index" class="i-hbs-check text-green-700" />
+        <div v-if="active === `${firstIndex}-${secondIndex}`" class="i-hbs-check text-green-700" />
         <div v-else class="i-hbs-copy" />
       </div>
     </div>
