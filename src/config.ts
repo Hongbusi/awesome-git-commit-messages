@@ -17,13 +17,13 @@ const config: Config = {
         { message: 'chore: remove debugger', description: '移除 debugger' }
       ]
     },
-    {
-      title: 'Feat',
-      description: '新增特性',
-      list: [
-        { message: '暂无', description: '暂无' }
-      ]
-    },
+    // {
+    //   title: 'Feat',
+    //   description: '新增特性',
+    //   list: [
+    //     { message: '暂无', description: '暂无' }
+    //   ]
+    // },
     {
       title: 'Fix',
       description: '修复 Bug',
@@ -41,13 +41,13 @@ const config: Config = {
         { message: 'docs: rename example', description: '重命名示例' }
       ]
     },
-    {
-      title: 'Style',
-      description: '代码格式修改',
-      list: [
-        { message: '暂无', description: '暂无' }
-      ]
-    },
+    // {
+    //   title: 'Style',
+    //   description: '代码格式修改',
+    //   list: [
+    //     { message: '暂无', description: '暂无' }
+    //   ]
+    // },
     {
       title: 'Refactor',
       description: '代码重构',
@@ -57,41 +57,41 @@ const config: Config = {
         { message: 'refactor: simplify logic', description: '简化逻辑' }
       ]
     },
-    {
-      title: 'Perf',
-      description: '改善性能',
-      list: [
-        { message: '暂无', description: '暂无' }
-      ]
-    },
-    {
-      title: 'Test',
-      description: '测试',
-      list: [
-        { message: '暂无', description: '暂无' }
-      ]
-    },
-    {
-      title: 'Build',
-      description: '变更项目构建或外部依赖',
-      list: [
-        { message: '暂无', description: '暂无' }
-      ]
-    },
+    // {
+    //   title: 'Perf',
+    //   description: '改善性能',
+    //   list: [
+    //     { message: '暂无', description: '暂无' }
+    //   ]
+    // },
+    // {
+    //   title: 'Test',
+    //   description: '测试',
+    //   list: [
+    //     { message: '暂无', description: '暂无' }
+    //   ]
+    // },
+    // {
+    //   title: 'Build',
+    //   description: '变更项目构建或外部依赖',
+    //   list: [
+    //     { message: '暂无', description: '暂无' }
+    //   ]
+    // },
     {
       title: 'Ci',
       description: '更改持续集成软件的配置文件和 package 中的 scripts 命令',
       list: [
         { message: 'ci: remove verify script', description: '删除验证脚本' }
       ]
-    },
-    {
-      title: 'Revert',
-      description: '代码回退',
-      list: [
-        { message: '暂无', description: '暂无' }
-      ]
     }
+    // {
+    //   title: 'Revert',
+    //   description: '代码回退',
+    //   list: [
+    //     { message: '暂无', description: '暂无' }
+    //   ]
+    // }
   ]
 }
 
