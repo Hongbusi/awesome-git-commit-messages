@@ -14,7 +14,8 @@ const config: Config = {
         { message: 'chore: update readme', description: '更新 README' },
         { message: 'chore: update lockfile', description: '更新 lock 文件' },
         { message: 'chore: fix eslint error', description: '修复 eslint error' },
-        { message: 'chore: remove debugger', description: '移除 debugger' }
+        { message: 'chore: remove debugger', description: '移除 debugger' },
+        { message: 'chore: format', description: '格式化' }
       ]
     },
     // {
@@ -28,7 +29,9 @@ const config: Config = {
       title: 'Fix',
       description: '修复 Bug',
       list: [
-        { message: 'fix: style writing error', description: '风格书写错误' }
+        { message: 'fix: style writing error', description: '风格书写错误' },
+        { message: 'fix: break long words on overflow', description: '在溢出时中断长词' },
+        { message: 'fix: spell checker', description: '拼写检查' }
       ]
     },
     {
