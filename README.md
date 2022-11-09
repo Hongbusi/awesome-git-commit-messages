@@ -2,9 +2,7 @@
 
 [Website](https://git.hongbusi.com)
 
-A collection of git commit message examples to make your project's commit history more readable.
-
-![image](./image.png)
+![A collection of git commit message examples to make your project's commit history more readable.](./image.png)
 
 ## Want to contribute?
 
