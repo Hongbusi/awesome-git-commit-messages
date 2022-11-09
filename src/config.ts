@@ -57,6 +57,7 @@ const config: Config = {
       list: [
         { message: 'refactor: improve code readability', description: '改进代码可读性' },
         { message: 'refactor: rename directory', description: '重命名目录' },
+        { message: 'refactor: optimize directory structure', description: '优化目录结构' },
         { message: 'refactor: simplify logic', description: '简化逻辑' }
       ]
     },
