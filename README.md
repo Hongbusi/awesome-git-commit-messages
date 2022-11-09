@@ -1,8 +1,11 @@
 # Awesome Git Commit Messages
 
+[Website](https://git.hongbusi.com)
+
 A collection of git commit message examples to make your project's commit history more readable.
 
-[Website](https://git.hongbusi.com)
+![image1](./image1.png)
+![image2](./image2.png)
 
 ## Want to contribute?
 
