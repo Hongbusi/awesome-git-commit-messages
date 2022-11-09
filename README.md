@@ -4,8 +4,7 @@
 
 A collection of git commit message examples to make your project's commit history more readable.
 
-![image1](./image1.png)
-![image2](./image2.png)
+![image](./image.png)
 
 ## Want to contribute?
 
