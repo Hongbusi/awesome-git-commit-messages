@@ -19,10 +19,15 @@ A collection of git commit message examples to make your project's commit histor
 
 Need to include the following fields：
 
-- message
-- description
+- `message`
+- `description`
 
-Eg. `message: 'chore: add xxx dep', description: '添加 xxx 依赖'`。
+Eg:
+
+``` md
+message: chore: add xxx dep
+description: 添加 xxx 依赖
+```
 
 ## License
 
