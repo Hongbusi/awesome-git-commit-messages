@@ -15,7 +15,8 @@ const config: Config = {
         { message: 'chore: update lockfile', description: '更新 lock 文件' },
         { message: 'chore: fix eslint error', description: '修复 eslint error' },
         { message: 'chore: remove debugger', description: '移除 debugger' },
-        { message: 'chore: format', description: '格式化' }
+        { message: 'chore: format', description: '格式化' },
+        { message: 'chore: fix build script', description: '修复打包脚本' }
       ]
     },
     // {
